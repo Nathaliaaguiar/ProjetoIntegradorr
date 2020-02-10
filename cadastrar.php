@@ -30,14 +30,6 @@
     font-weight: 400;
     margin-bottom: 30px;
   }  
-  .artigo{
-    float:left;
-    width:33.333%;
-  }
-  .artigo img{
-    width:95%;
-    
-  }
   .jumbotron {
     background-color: #f4511e;
     color: #fff;
@@ -196,6 +188,12 @@
       font-size: 150px;
     }
   }
+  input{ border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px ##FE642E;-moz-box-shadow: 1px 1px 2px #333333;-webkit-box-shadow: 1px 1px 2px #333333;background: #cccccc; border:1px solid #000000;width:150px}textarea{border: 1px solid #000000;background:#cccccc;width:150px;height:100px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px #333333;-moz-box-shadow: 1px 1px 2px #333333;-webkit-box-shadow: 1px 1px 2px #333333;}input[type=text]:hover, textarea:hover{          background: #ffffff; border:1px solid #990000;}input[type=submit]{        background:#006699;        color:#ffffff;;}
+#login{
+  border: 1px solid #FE642E;
+  border-bottom: 2px solid ##FE642E;
+  background:#FFFFFF;
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -223,11 +221,12 @@
 
 <div class="jumbotron text-center">
   
-  <p>нαмвυяgυєяıα αηтєяsαηαł </p> <BR>
+  <p>нαмвυяgυєяıα αηтєяsαηαł</p> <BR>
   
   <form>
     <div class="input-group">
-     
+      
+      </div>
     </div>
   </form>
 </div>
@@ -235,42 +234,18 @@
 
 
 
-
-
-
-<center><h2>CONFIRA ALGUMAS DAS NOSSAS PROMOÇÕES E CUPONS, APRESENTE O CUPOM NA COMPRA DE:</h2> </center>
-
-		   
-		   <?php
-		   
-		   include_once 'conexao.php';
-		   $sql ="select * from artigo";
-		   $resultado = mysqli_query($con,$sql);
-           while($row = mysqli_fetch_array($resultado)){
-		   
-		   ?>
-		   
-		   <!--colocar html-->
-		   
-		   <div class="artigo">
-		   <h4><?php echo $row["titulo"]; ?></h4>
-		   <img src="upload/<?php echo $row["foto"]; ?>"
-		   <class="imagemartigo">
-		   <?php echo substr($row["artigo"],0,680)."..."; ?>
-		   
-		   
-		   </div>
-		   <?php
-		   
-		   }
-		   
-		   mysqli_close($con);
-		   
-		   ?>
-		
-		
-		</div><!--fecha divisão conteudo do artigo-->
-		
-		
-		
-		
+<div id="login">
+<form action="gravarusuario.php" method="post" enctype="multipart/form-data">
+<center> <h2>CADASTRE SEU EMAIL❕</h2>
+			    ✔️ E-mail:
+				 <input type="text" name="email" required="required"/>
+				 <br><br>
+				 
+				 ✔️senha:
+				 <input type="password" name="senha" required="required"/>
+				 <br><br>
+				 
+				
+				 <input type="submit" value="cadastrar"/>
+</div>
+<br><br><br><br><br><br><center>

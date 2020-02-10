@@ -2,7 +2,7 @@
 
 session_start();
 $email = $_POST["email"];
-$senha = md5($_POST["senha"]);
+$senha = $_POST["senha"];
 
 $sql = "select * from usuario WHERE email ='".$email."' AND senha = '".$senha."'";
 
@@ -14,10 +14,13 @@ $row = mysqli_fetch_array($rs);
 $adm = $row['adm'];
 
 if($adm == 1){
-    header('location: artigo.php');
+    header('location: artigos.php');
 }else{
     header('location: consultauser.php');
 }
+}else{
+    echo "email ou senha incorretos!";
+
 }
 mysqli_close($con);   
 

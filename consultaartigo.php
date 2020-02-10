@@ -16,7 +16,7 @@
 		   <img src="upload/<?php echo $row["foto"]; ?>"
 		   <class="imagemartigo">
 		   <?php echo substr($row["artigo"],0,680)."..."; ?>
-		   <p><a href="#">Leia Mais...</a></p>
+		  
 		   
 		   </div>
 		   <?php

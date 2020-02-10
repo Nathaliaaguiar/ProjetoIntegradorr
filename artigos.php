@@ -188,6 +188,13 @@
       font-size: 150px;
     }
   }
+  input{ border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px #333333;-moz-box-shadow: 1px 1px 2px #333333;-webkit-box-shadow: 1px 1px 2px #333333;background: #cccccc; border:1px solid #000000;width:150px}textarea{border: 1px solid #000000;background:#cccccc;width:150px;height:100px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px #333333;-moz-box-shadow: 1px 1px 2px #333333;-webkit-box-shadow: 1px 1px 2px #333333;}input[type=text]:hover, textarea:hover{          background: #ffffff; border:1px solid #990000;}input[type=submit]{        background:#006699;        color:#ffffff;;}
+#login{
+  border: 1px solid #FE642E;
+  border-bottom: 2px solid ##FE642E;
+  background:#FFFFFF;
+
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -200,14 +207,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-<a class="navbar-brand" href="#myPage">вυяgυєя т∂єsıgηєя🍔</a>
+<a class="navbar-brand" href="#myPage">мαяıσ вυgυєя🍔</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="SOBRE.HTML">SOBRE NÓS</a></li>
-        <li><a href="SOBRE.HTML">SERVÇOS</a></li>
+        <li><a href="SOBRE.HTML">SERVIÇOS</a></li>
         <li><a href="SOBRE.HTML">CONTATO</a></li>
-        <li><a href="SOBRE.HTML">Sair</a></li>
+        <li><a href="consultauser.php">CONSULTAR PRODUTOS</a></li>
+        <li><a href="SOBRE.HTML">SAIR</a></li>
+        
       </ul>
     </div>
   </div>
@@ -215,35 +224,33 @@
 
 <div class="jumbotron text-center">
   
-  <p>BURGUE TDESIGNER🍔 </p> <BR>
+  <p>нαмвυяgυєяıα αηтєяsαηαł </p> <BR>
   
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Email</button>
-      </div>
+      
+     
     </div>
   </form>
 </div>
 
-
-
-<center><h4>Gravar produtos para usuários:</h4>
+<center>
+<h6>BEM VINDO ADMINISTRADOR!</h6>
+<h4>Gravar produtos para usuários:</h4>
 
 <div id="conteudo1">
 		     <!--o formulario precisa ser habilitado a envair arquivo enctyp="multipart/form-data", habilita o form a enviar arquivo-->
 		     <form action="gravarartigo.php" method="post" enctype="multipart/form-data">
 			     Título:<br>
 				 <input type="text" name="titulo" required="required"/>
-				 <br><br>
+				 <br>
 				 
 				 Descrição:<br>
 				 <textarea name="artigo"></textarea>
-				<br><br> 
+				<br> 
 				 Fotos:<br>
 				  <input type="file" name="foto" required="required"/>
-			<br><br>
+			<br>
 				 <input type="submit" value="cadastrar"/>
 				 
 			 

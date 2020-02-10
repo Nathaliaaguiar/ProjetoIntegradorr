@@ -200,13 +200,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-<a class="navbar-brand" href="#myPage">вυяgυєя т∂єsıgηєя🍔</a>
+<a class="navbar-brand" href="#myPage">мαяıσ вυgυєя🍔</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="SOBRE.HTML">SOBRE NÓS</a></li>
         <li><a href="SOBRE.HTML">SERVIÇOS</a></li>
         <li><a href="SOBRE.HTML">CONTATO</a></li>
+        <li><a href="consultauser.php">CONSULTAR CUPONS</a></li>
         <li><a href="sair.php">Sair</a></li>
       </ul>
     </div>
@@ -215,13 +216,11 @@
 
 <div class="jumbotron text-center">
   
-  <p>BURGUE TDESIGNER 🍔 </p> <BR>
+  <p>нαмвυяgυєяıα αηтєяsαηαł </p> <BR>
   
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Email</button>
+      
       </div>
     </div>
   </form>
@@ -263,7 +262,7 @@
 				 $sql="insert into artigo values (null,'".$titulo."','".$artigo."','".$nomefoto."')";
 				 
 				 if(mysqli_query($con,$sql)){
-				 echo "<center>Gravado com sucesso<br><br><br><br><img src='img/certo.png'>";
+				 echo "<center>Gravado com sucesso<br><br><br><br><img src='img/ce.png'>";
 				 //mover arquivo de foto para pasta
 				 
 				move_uploaded_file($foto["tmp_name"],"upload/".$nomefoto);

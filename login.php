@@ -153,6 +153,9 @@
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
+  .button{margin: 10px
+
+  }
   @keyframes slide {
     0% {
       opacity: 0;
@@ -188,6 +191,13 @@
       font-size: 150px;
     }
   }
+  input{ border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px #333333;-moz-box-shadow: 1px 1px 2px #333333;-webkit-box-shadow: 1px 1px 2px #333333;background: #cccccc; border:1px solid #000000;width:150px}textarea{border: 1px solid #000000;background:#cccccc;width:150px;height:100px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px #333333;-moz-box-shadow: 1px 1px 2px #333333;-webkit-box-shadow: 1px 1px 2px #333333;}input[type=text]:hover, textarea:hover{          background: #ffffff; border:1px solid #990000;}input[type=submit]{        background:#006699;        color:#ffffff;;}
+#login{
+  border: 1px solid #FE642E;
+  border-bottom: 2px solid ##FE642E;
+  background:#FFFFFF;
+
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -200,14 +210,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-<a class="navbar-brand" href="#myPage">вυяgυєя т∂єsıgηєя🍔</a>
+<a class="navbar-brand" href="#myPage">мαяıσ вυgυєя🍔</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="SOBRE.HTML">SOBRE NÓS</a></li>
         <li><a href="SOBRE.HTML">SERVIÇOS</a></li>
         <li><a href="SOBRE.HTML">CONTATO</a></li>
-        <li><a href="sair.php">Sair</a></li>
+        <li><a href="sair.php">SAIR</a></li>
       </ul>
     </div>
   </div>
@@ -215,13 +225,12 @@
 
 <div class="jumbotron text-center">
   
-  <p>BURGUE TDESIGNER 🍔 </p> <BR>
+  <p>нαмвυяgυєяıα αηтєяsαηαł </p> <BR>
   
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Email</button>
+   
+     
       </div>
     </div>
   </form>
@@ -231,7 +240,7 @@
 
 
 <div id="login">
-<form action="artigos.php" method="post" enctype="multipart/form-data">
+<form action="gravar.php" method="post" enctype="multipart/form-data">
 <center> <h2>FAÇA SEU LOGIN AQUI❕</h2>
 			    ✔️ E-mail:
 				 <input type="text" name="email" required="required"/>
@@ -242,6 +251,6 @@
 				 <br><br>
 				 
 				
-				 <input type="submit" value="Entrar"/>
+				 <input type="submit" value="Entrar" class="button"/><a href="cadastrar.php"><input type="button" class="button" value="Cadastrar"/></a>
 </div>
 <br><br><br><br><br><br><center>
